@@ -1,4 +1,4 @@
-﻿
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -20,7 +20,6 @@
         .btn { display: inline-block; background: #2a5298; color: white; padding: 12px 30px; text-align: center; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; transition: 0.3s; border: none; cursor: pointer; font-size: 1em; }
         .btn:hover { background: #1e3c72; }
        
-        /* Стили для красивого автономного отображения формул */
         .math-display { display: flex; justify-content: center; align-items: center; margin: 20px 0; padding: 15px; background: #f8f9fa; border: 1px dashed #cbd5e1; border-radius: 6px; font-family: 'Times New Roman', Times, serif; font-size: 1.25em; font-style: italic; }
         .fraction { display: inline-flex; flex-direction: column; align-items: center; text-align: center; padding: 0 4px; vertical-align: middle; font-size: 0.95em; }
         .numerator { border-bottom: 1px solid #333; width: 100%; padding-bottom: 2px; }
@@ -68,7 +67,7 @@
         <a href="https://doi.org" target="_blank" class="btn">Открыть на ResearchGate / View Publication</a>
     </div>
 
-    <!-- ИСПРАВЛЕННЫЙ РАЗДЕЛ 3: МАТЕМАТИКА И КОСМИЧЕСКАЯ РАДИАЦИЯ -->
+    <!-- РАЗДЕЛ 3: МАТЕМАТИКА И КОСМИЧЕСКАЯ РАДИАЦИЯ -->
     <div class="lang-block">
         <div class="lang-col">
             <h2>Математическое моделирование и космическая защита</h2>
@@ -94,7 +93,7 @@
             </div>
            
             <h3>Защита в дальнем космосе (Марс / Луна)</h3>
-            <p>В условиях жесткой радиации датчики каппы фиксируют системный радиотоксический стресс по маркерам слюны (8-OHdG). ДНК-чип рассчитывает поглощенную дозу и активирует запуск стволовых клеток для синтеза белков <strong>Rad51</strong> и <strong>Ku70/Ku80</strong>, которые осуществляют непрерывное «сшивание» разорванной радиацией ДНК космонавта, обеспечивая биологическую безопасность.</p>
+            <p>В условиях жесткой радиации датчики каппы фиксируют системный радиотоксический стресс по маркерам слюны (8-OHdG). ДНК-чип рассчитывает поглощенную дозу и активирует запуск стволовых клеток для синтеза белков <strong>Rad51</strong> и <strong>Ku70/Ku80</strong>, которые осуществляют непрерывное «сшивание» разорванной радиацией ДНК космонавта, обеспечивая biological безопасность.</p>
         </div>
        
         <div class="lang-col">
@@ -125,9 +124,11 @@
         </div>
     </div>
 
-    <!-- РАЗДЕЛ 4: ФОРМА ДЛЯ ПАРТНЕРОВ И ИНВЕСТОРОВ -->
+    <!-- РАЗДЕЛ 4: ФОРМА ДЛЯ ПАРТНЕРОВ И ИНВЕСТОРОВ (АКТИВНАЯ) -->
     <div class="form-section">
         <h3>Вступить в консорциум / Join the Consortium</h3>
-        <form onsubmit="alert('Заявка успешно сформирована! / Application successfully generated!'); return false;">
+        <form action="https://formspree.io" method="POST">
+            <input type="hidden" name="_replyto_fallback" value="vyacislav.kuznetsov@asoiu.edu.az">
             <div class="form-group">
                 <label>Ваше Имя / Full Name:</label>
+                <input type="text" name="name" required placeholder="Иван Петров / Dr. John Smith">
