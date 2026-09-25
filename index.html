@@ -1,11 +1,12 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bio-Hybrid Dental Shield Consortium</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: #f4f7f6; color: #333; line-height: 1.5; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: #f4f7f6; color: #333; line-height: 1.6; }
         header { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; padding: 50px 20px; text-align: center; }
         header h1 { margin: 0; font-size: 2.3em; }
         header p { font-size: 1.1em; opacity: 0.9; margin-top: 10px; }
@@ -13,10 +14,18 @@
         .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
         .lang-block { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid #ddd; }
         .lang-col { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
-        .lang-col h2 { color: #1e3c72; margin-top: 0; border-bottom: 2px solid #1e3c72; padding-bottom: 5px; }
+        .lang-col h2 { color: #1e3c72; margin-top: 0; border-bottom: 2px solid #1e3c72; padding-bottom: 5px; font-size: 1.5em; }
+        .lang-col h3 { color: #2a5298; font-size: 1.1em; margin-top: 20px; }
         .doi-section { background: #eef2f7; border-left: 6px solid #2a5298; padding: 25px; margin: 40px 0; border-radius: 0 8px 8px 0; text-align: center; }
         .btn { display: inline-block; background: #2a5298; color: white; padding: 12px 30px; text-align: center; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; transition: 0.3s; border: none; cursor: pointer; font-size: 1em; }
         .btn:hover { background: #1e3c72; }
+       
+        /* Стили для красивого автономного отображения формул */
+        .math-display { display: flex; justify-content: center; align-items: center; margin: 20px 0; padding: 15px; background: #f8f9fa; border: 1px dashed #cbd5e1; border-radius: 6px; font-family: 'Times New Roman', Times, serif; font-size: 1.25em; font-style: italic; }
+        .fraction { display: inline-flex; flex-direction: column; align-items: center; text-align: center; padding: 0 4px; vertical-align: middle; font-size: 0.95em; }
+        .numerator { border-bottom: 1px solid #333; width: 100%; padding-bottom: 2px; }
+        .denominator { padding-top: 2px; width: 100%; }
+       
         .form-section { background: #fff; border: 1px solid #ddd; padding: 30px; border-radius: 8px; max-width: 600px; margin: 50px auto 0 auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         .form-section h3 { margin-top: 0; color: #1e3c72; text-align: center; }
         .form-group { margin-bottom: 15px; }
@@ -59,19 +68,60 @@
         <a href="https://doi.org" target="_blank" class="btn">Открыть на ResearchGate / View Publication</a>
     </div>
 
-    <!-- РАЗДЕЛ 3: СФЕРЫ ПРИМЕНЕНИЯ И ИНВЕСТИЦИЙ -->
+    <!-- ИСПРАВЛЕННЫЙ РАЗДЕЛ 3: МАТЕМАТИКА И КОСМИЧЕСКАЯ РАДИАЦИЯ -->
     <div class="lang-block">
         <div class="lang-col">
-            <h2>Целевые рынки консорциума</h2>
-            <p><strong>Автоматизированная медицина:</strong> Персонализированное лечение хронических, аутоиммунных и онкологических заболеваний «по требованию» в обход фильтра печени.</p>
-            <p><strong>Радикальное продление жизни:</strong> Системное омоложение тканей, сенолитическая очистка организма и эпигенетическая перезагрузка биологических часов клеток.</p>
-            <p><strong>Освоение дальнего космоса:</strong> Автоматическая система непрерывного ремонта ДНК и защита экипажей космических миссий (Марс/Луна) от жесткой радиации.</p>
+            <h2>Математическое моделирование и космическая защита</h2>
+            <h3>Кинетика биоинтерфейса</h3>
+            <p>Перенос цифровой команды из биочипа ДНК-оригами в управляемое изменение экспрессии генов внутри клеток описывается нелинейной системой дифференциальных уравнений. Изменение концентрации цитозольного кальция [Ca<sup>2+</sup>]<sub>c</sub> во времени t определяется по формуле:</p>
+           
+            <div class="math-display">
+                <div class="fraction">
+                    <span class="numerator">d[Ca<sup>2+</sup>]<sub>c</sub></span>
+                    <span class="denominator">dt</span>
+                </div>
+                &nbsp;= J<sub>electro</sub> &minus; J<sub>pump</sub>([Ca<sup>2+</sup>]<sub>c</sub>) + J<sub>leak</sub>
+            </div>
+           
+            <p>Скорость транскрипции терапевтических белков V<sub>trans</sub> под действием электрохимических сигналов рассчитывается согласно кинетике Хилла:</p>
+           
+            <div class="math-display">
+                V<sub>trans</sub> = V<sub>max</sub> &middot;
+                <div class="fraction">
+                    <span class="numerator">[Ca<sup>2+</sup>]<sub>c</sub><sup>n</sup></span>
+                    <span class="denominator">K<sub>d</sub><sup>n</sup> + [Ca<sup>2+</sup>]<sub>c</sub><sup>n</sup></span>
+                </div>
+            </div>
+           
+            <h3>Защита в дальнем космосе (Марс / Луна)</h3>
+            <p>В условиях жесткой радиации датчики каппы фиксируют системный радиотоксический стресс по маркерам слюны (8-OHdG). ДНК-чип рассчитывает поглощенную дозу и активирует запуск стволовых клеток для синтеза белков <strong>Rad51</strong> и <strong>Ku70/Ku80</strong>, которые осуществляют непрерывное «сшивание» разорванной радиацией ДНК космонавта, обеспечивая биологическую безопасность.</p>
         </div>
+       
         <div class="lang-col">
-            <h2>Consortium Target Markets</h2>
-            <p><strong>Automated Medicine:</strong> On-demand personalized treatment for chronic, autoimmune, and oncological conditions bypassing hepatic first-pass metabolism.</p>
-            <p><strong>Radical Longevity:</strong> Systemic tissue rejuvenation, senolytic cell clearance, and real-time epigenetic age-reversal controlled by external loops.</p>
-            <p><strong>Deep Space Exploration:</strong> Automated DNA repair matrix and continuous biological safeguarding system for long-duration human space missions and Mars colonization.</p>
+            <h2>Mathematical Modeling & Space Protection</h2>
+            <h3>Bio-interface Kinetics</h3>
+            <p>The transduction of a digital command from the DNA-origami biochip into targeted gene expression within the cells is modeled via non-linear differential equations. The dynamics of cytosolic calcium concentration [Ca<sup>2+</sup>]<sub>c</sub> over time t is governed by:</p>
+           
+            <div class="math-display">
+                <div class="fraction">
+                    <span class="numerator">d[Ca<sup>2+</sup>]<sub>c</sub></span>
+                    <span class="denominator">dt</span>
+                </div>
+                &nbsp;= J<sub>electro</sub> &minus; J<sub>pump</sub>([Ca<sup>2+</sup>]<sub>c</sub>) + J<sub>leak</sub>
+            </div>
+           
+            <p>The transcription rate V<sub>trans</sub> of the therapeutic agents induced by electrochemical signals follows Hill kinetics:</p>
+           
+            <div class="math-display">
+                V<sub>trans</sub> = V<sub>max</sub> &middot;
+                <div class="fraction">
+                    <span class="numerator">[Ca<sup>2+</sup>]<sub>c</sub><sup>n</sup></span>
+                    <span class="denominator">K<sub>d</sub><sup>n</sup> + [Ca<sup>2+</sup>]<sub>c</sub><sup>n</sup></span>
+                </div>
+            </div>
+           
+            <h3>Deep Space Radiation Safeguarding</h3>
+            <p>Under heavy cosmic rays, aligner sensors monitor systemic radiolytic stress via salivary biomarkers (8-OHdG). The DNA logic array processes inputs, calculates the dose, and triggers encapsulated MSCs to secrete engineered <strong>Rad51</strong> and <strong>Ku70/Ku80</strong> proteins, driving real-time non-homologous end joining (NHEJ) DNA repair inside the astronaut's body.</p>
         </div>
     </div>
 
@@ -81,31 +131,3 @@
         <form onsubmit="alert('Заявка успешно сформирована! / Application successfully generated!'); return false;">
             <div class="form-group">
                 <label>Ваше Имя / Full Name:</label>
-                <input type="text" required placeholder="Иван Петров / Dr. John Smith">
-            </div>
-            <div class="form-group">
-                <label>Организация (Вуз / Фонд / Компания):</label>
-                <input type="text" required placeholder="ADNSU / Venture Fund / MIT">
-            </div>
-            <div class="form-group">
-                <label>Ваш Email / Contact Email:</label>
-                <input type="email" required placeholder="example@domain.com">
-            </div>
-            <div class="form-group">
-                <label>Сообщение инвестора / Partnership Proposal:</label>
-                <textarea rows="4" placeholder="Опишите ваш интерес к проекту... / Describe your investment or research interest..."></textarea>
-            </div>
-            <div style="text-align: center;">
-                <button type="submit" class="btn">Подать заявку / Submit Application</button>
-            </div>
-        </form>
-    </div>
-
-</div>
-
-<footer>
-    <p>&copy; 2026 Bio-Hybrid Dental Shield Consortium. Affiliated with Azerbaijan State Oil and Industry University (ADNSU). All Rights Reserved.</p>
-</footer>
-
-</body>
-</html>
